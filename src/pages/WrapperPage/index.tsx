@@ -34,10 +34,10 @@ const WrapperPage: FC<WrapperPageProps> = ({
   }, [location.pathname]);
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === 'ArrowRight') {
+    const handleKeyDown = ({ key }: KeyboardEvent): void => {
+      if (key === 'ArrowRight') {
         handleNext();
-      } else if (event.key === 'ArrowLeft') {
+      } else if (key === 'ArrowLeft') {
         handlePrev();
       }
     };

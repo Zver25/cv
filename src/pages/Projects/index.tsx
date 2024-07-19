@@ -1,4 +1,5 @@
 import {FC, JSX} from 'react';
+import { Navigate } from 'react-router-dom';
 import {projectList} from './constants.ts';
 import Project from './Project.tsx';
 
@@ -12,6 +13,10 @@ const Projects: FC<ProjectProps> = ({
   const project = projectList.find((project): boolean => (
     project.alias === path
   ));
+
+  if (!project) {
+    return <Navigate to="/404" />;
+  }
 
   return (
     <Project

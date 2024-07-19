@@ -1,4 +1,4 @@
-import React, {FC, JSX} from 'react';
+import {FC, JSX} from 'react';
 
 const Initial: FC = (): JSX.Element => {
   const  date = new Date();

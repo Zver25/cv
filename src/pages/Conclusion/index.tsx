@@ -1,4 +1,4 @@
-import React, {FC, JSX} from 'react';
+import {FC, JSX} from 'react';
 import '../styles.css';
 
 const Conclusion: FC = (): JSX.Element => {
