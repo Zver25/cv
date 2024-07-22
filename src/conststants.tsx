@@ -5,6 +5,7 @@ import Intro from './pages/Intro';
 import Projects from './pages/Projects';
 import {projectList} from './pages/Projects/constants.ts';
 import TechCompetencies from './pages/TechCompetencies';
+import Thanks from './pages/Thanks';
 import WrapperPage from './pages/WrapperPage';
 
 export const router = createBrowserRouter([
@@ -63,6 +64,14 @@ export const router = createBrowserRouter([
       </WrapperPage>
     ),
   },
+  {
+    path: 'thanks',
+    element: (
+      <WrapperPage>
+        <Thanks />
+      </WrapperPage>
+    ),
+  },
 ]);
 
 export const routerFlow = [
@@ -72,4 +81,5 @@ export const routerFlow = [
   '/projects/coding-stories',
   '/projects/availia',
   '/conclusion',
+  '/thanks',
 ];
