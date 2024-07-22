@@ -5,7 +5,7 @@ RUN npm install
 RUN npm run build
 
 FROM nginx:stable
-MAINTAINER AlesandrSviridovsky
+MAINTAINER AleksandrSviridovsky
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 COPY --from=builder /app/dist .
